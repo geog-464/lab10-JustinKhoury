@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>lab9</title>
-        
+
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- link to leaflet styles -->
@@ -18,15 +18,23 @@
     <body>
         <!--put your initial page content here-->
 		<div id="div1">
+      <p> Q2 - The 'styleAll' function defines how the placemarks appear on the map. The 'styles' variable is an object that contains defines the style of the element. The conditional if statement defines the placemarks style as a point. The 'styleAll' function returns the 'styles' object.</p>
+      <p> Q4 - 'Feature' is the vector data for each train station, while 'layer' is the visual aspect of the stations.</p>
+      <p> Q5 - layer.options.fill is a method. layer.getLatLng() is a property.</p>
+      <p> Q6 - The placemarks aren't filled with any colour and they are bigger.</p>
 		</div>
 		<div id="mapdiv">
-			
-		</div>
-		
-        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
-		
+		</div>
+
+        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+        <select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+	         <option value="map0" selected="selected" disabled>Load a map</option>
+	         <option value='mapa'>Map A</option>
+	         <option value='mapb'>Map B</option>
+        </select>
+
+
 		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
